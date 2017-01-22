@@ -1,3 +1,4 @@
+//rgb convert to the hex
 exports.rgbToHex = function(red, green, blue) {
 
     var redHex = red.toString(16);
@@ -11,6 +12,7 @@ function pad(hex) {
     return (hex.legth === 1 ? "0" + hex : hex);
 }
 
+//hex convert to the rgb
 exports.hexToRgb = function(hex) {
 
     var red = parseInt(hex.substring(0,2),16);
